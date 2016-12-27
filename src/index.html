@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+	<div class="swiper-container">
+	<div class="music">
+	</div>
+	<video src="./images/Westlife - My Love.mp3" class="videomusic" style='position: absolute;
+	left:10%;top:10%;' autoplay="autoplay" loop='loop'></video>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id='firstpage'>
+            	 <p class="animated fadeInDownBig" id="txpic" style='animation-duration: 1.8s;'></p>
+              <div class="myname animated fadeInLeft" style='animation-delay: 0.8s;'>姓名：支顺文</div>
+              <div class="sex animated fadeInRight" id='sex' style='animation-delay: 1s; '>性别：男</div>
+              <div class="age animated fadeInLeft" id='age' style='animation-delay: 1.5s;'>年龄：24</div>  
+              <div class="from animated fadeInRight" id='from' style='animation-delay: 2s;'>籍贯：安徽</div>
+              <div class="school animated fadeInLeft" id='school' style='animation-delay: 2.4s;'>毕业院校：皖西学院</div>
+            </div>
+            <div class="swiper-slide" id='twopage'>
+            	<div class="myskill animated zoomInDown" >我的技能</div>
+            	<div class="skill_1 animated slideInLeft" >HTML4、HTML5、ES5、ES6、CommonJS、CMD、AMD</div>
+            	<div class="skill_2 animated slideInRight" >Jquery、Zepto、AngularJs、Recat、Avalon</div>
+            	<div class="skill_3 animated slideInLeft" >Jquery menu plugin、Jquery nav plugin、zepto</div>
+            	<div class="skill_4 animated slideInRight" >Javascript原生、Jquery及Zepto插件、AngularJs</div>
+            	<div class="skill_5 animated slideInLeft" >Swiper、Iscroll</div>
+            	<div class="skill_6 animated zoomInUp" >......</div> 
+            </div>
+            <div class="swiper-slide" id='threepage'> 
+            <div class="myexp ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">个人经历</div>
+            <div class="myexp_1 ani" style=' justify-content: flex-start;' swiper-animate-effect="fadeInLeftBig" swiper-animate-duration="1s" swiper-animate-delay="0.5s"><span style='width: 34%;'>2011-2015年</span><span class="iconfont icon-icon-copy-copy arrow" style='color:#FFFFFF;'></span><span>在皖西学院学习</span></div>
+            <div class="myexp_2 ani" swiper-animate-effect="fadeInLeftBig" swiper-animate-duration="1s" swiper-animate-delay="0.9s"><span style='width: 34%;'>2015-2016年</span><span class="iconfont icon-icon-copy-copy"  style='color:#FFFFFF;'></span><span>xxxxxxxxxxxxxxxx</span></div>	 
+            <div class="myexp_3 ani"  style=' justify-content: flex-start;' swiper-animate-effect="fadeInLeftBig" swiper-animate-duration="1s" swiper-animate-delay="1.3s"><span style='width: 34%;'>2016-2017年</span><span class="iconfont icon-icon-copy-copy"  style='color:#FFFFFF;'></span><span>xxxxxxxxxxxxxxxxxxxxx</span></div>
+            <div class="line ani" style='position: absolute;height:34%;width:0px;border: 1px solid #E1D6E2;top:19%;left:38%;' swiper-animate-effect="bounceInDown" swiper-animate-duration="1.5s" swiper-animate-delay="2.5s"></div>
+
+            <div class="xmexp ani" swiper-animate-effect="fadeInLeftBig" swiper-animate-duration="1s" swiper-animate-delay="1.5s">项目经验</div>
+            <div class="xmexp_content ani" style="display: flex;background: red;position: absolute;left: 2%;top:71%;color: #A4E60A;background: rgba(5,4,14,.8);width: 95%;border-radius: 15px;" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="1s" swiper-animate-delay="2.0s">多家企业网站，平台门户等;如：网上药博会、政教通等多家网站;</div>	
+            </div>
+            <div class="swiper-slide" id='fourpage'>
+            	<div class="iconfont icon-erweima erwm"></div>
+            	<div class="connectme ani" style='display: flex;background: red;position: absolute;left: 4%;top:20%;color: rgb(249, 232, 7);background: rgba(5,4,14,.8);padding:0 1%;border-radius: 15px;' swiper-animate-effect="wobble" swiper-animate-duration="1s" swiper-animate-delay="0.5s">请联系我吧:</div>
+            	<div class="phonumber ani" style='display: flex;background: red;position: absolute;left: 4%;top:28%;color: rgb(249, 232, 7);background: rgba(5,4,14,.8);padding:0 1%;border-radius: 15px;' swiper-animate-effect="lightSpeedIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s">Tel:18555222233</div>
+            	<div class="qq ani" style='display: flex;background: red;position: absolute;left: 4%;top:36%;color: rgb(249, 232, 7);background: rgba(5,4,14,.8);padding:0 1%;border-radius: 15px;' swiper-animate-effect="lightSpeedIn" swiper-animate-duration="0.8s" swiper-animate-delay="1.5s">qq:1399972369</div>
+            	<div class="mail ani" style='display: flex;background: red;position: absolute;left: 4%;top:44%;color: rgb(249, 232, 7);background: rgba(5,4,14,.8);padding:0 1%;border-radius: 15px;' swiper-animate-effect="lightSpeedIn" swiper-animate-duration="0.8s" swiper-animate-delay="2.2s">eamil:1399972369@qq.com</div>
+            <button class="btn ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1.5s" swiper-animate-delay="3s">进入体验</button></div>
+        </div>
+    </div>
+    	<div class="container2">
+    	<div id="header">我的技能</div>
+<div id="wrapper" style='background: url(./images/xkbg.png) no-repeat center;background-size:100% 100%; '>
+	<div id="scroller">
+	<div class="xkpic" style='background: url(./images/xk1.png) no-repeat ;position:absolute;left:20%;top:65%;width: 80%;height: 28%;background-size:100% 100%;'></div>
+	<div class="xkpic1" style='background: url(./images/xk2.png) no-repeat ;position:absolute;left:20%;top:5%;width: 50%;height: 20%;background-size:50% 50%;'></div>
+	<div class="xkpic2" style='background: url(./images/xk3.png) no-repeat ;position:absolute;left:30%;top:30%;width: 50%;height: 20%;background-size:50% 50%;'></div>
+		
+
+<div id="pullDown">
+			<span class="pullDownIcon"></span><span class="pullDownLabel"></span>
+		</div>
+
+		<ul>
+		</ul>
+
+		 <!-- <div id="PullUp" class="scroller-pullUp" style="display:none; text-align: center;color:white;">
+		             <img style="width: 20px; height: 20px;" src="./images/pull-icon@2x.png" />
+		             <span id="pullUp-msg" class="pull-up-msg">上拉刷新</span>
+		         </div> -->
+		<div id="pullUp">
+			<span class="pullUpIcon"></span><span class="pullUpLabel"></span>
+		</div>
+
+	</div>
+</div>
+		<div id="footer">
+			<div class="footer_btn" id='skill'>我的技能</div>
+			<div class="footer_btn" id='project'>我的项目</div>
+			<div class="footer_btn" id='work'>工作经历</div>
+			<div class="footer_btn" id='myself'>介绍自己</div>
+		</div>	
+ 	</div>
+	<script src='./js/index.js'></script>
+</body>
+</html>

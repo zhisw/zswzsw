@@ -1,0 +1,258 @@
+$wt:100%;
+@mixin flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+@mixin opacity($opacity:50) {
+  opacity: $opacity / 100;
+  filter: alpha(opacity=$opacity);
+}
+html {
+    width: $wt;
+    height: $wt;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    width: $wt;
+    height: $wt;
+}
+
+.swiper-container {
+    width: $wt;
+    height: $wt;
+    background: url(../images/bg.jpg) no-repeat center;
+    background-size: $wt $wt;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: $wt;
+    height: $wt;
+    /* Center slide text vertically */
+    @include flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#firstpage {
+    background: url(../images/bg3.jpg) no-repeat center;
+    background-size: $wt $wt;
+}
+#twopage{
+    background: url(../images/bg2.jpg) no-repeat center;
+    background-size: $wt $wt;
+}
+#threepage{
+    background: url(../images/bg4.jpg) no-repeat center;
+    background-size: $wt $wt;
+}
+#fourpage{
+    background: url(../images/bg5.jpg) no-repeat center;
+    background-size: $wt $wt;
+}
+#txpic{
+    width: 37%;
+    height: 22%;
+    background: red;
+    position: absolute;
+    top: 14%;
+    left: 31%;
+    border-radius: 50%;
+}
+#fourpage button{
+    position: absolute;
+    top: 73%;
+    width: 30%;
+    height: 6%;
+    color: rgba(38,24,224,.94);
+    border: none;
+    font-size: 14px;
+    font-weight: bolder;
+    background: rgba(135,253,7,.76);
+    left: 36%;
+}
+@mixin position($top,$left){
+    position: absolute;
+    left:$left;
+    top:$top;
+}
+.myname{
+    @include position(57%,22%);
+    color: #51149E;
+    background: rgb(239, 224, 235);
+    width: 56%;
+    padding: 1% 0;
+    border-radius: 10px;
+}
+.sex{
+    @include position(63%,22%);
+    color: #51149E;
+    background: rgb(239, 224, 235);
+    width: 56%;
+    padding: 1% 0;
+    border-radius: 10px;
+}
+.age{
+    @include position(69%,22%);
+    color: #51149E;
+    background: rgb(239, 224, 235);
+    width: 56%;
+   padding: 1% 0;
+    border-radius: 10px;
+}
+.from{
+    @include position(75%,22%);
+    color: #51149E;
+    background: rgb(239, 224, 235);
+    width: 56%;
+    padding: 1% 0;
+    border-radius: 10px;
+     -vendor-animation-delay: 6s;
+}
+.school{
+    @include position(81%,22%);
+    color: #51149E;
+    background: rgb(239, 224, 235);
+    width: 56%;
+    padding: 1% 0;
+    border-radius: 10px;
+}
+.myskill,.skill_1,.skill_2,.skill_3,.skill_4,.skill_5,.skill_6{
+    color: #EFF50E;
+    background: #03131F;
+    padding: 1% 0;
+     width:82%;
+    border-radius: 10px;
+}
+.myskill{
+       @include position(23%,10%); 
+        color: #0A0A09;
+        background: #E5E80E;
+        font-size: 19px;
+        font-weight: bold;
+}
+.skill_1{
+       @include position(34%,10%); 
+}
+.skill_2{
+       @include position(46%,10%); 
+}
+.skill_3{
+       @include position(58%,10%); 
+}
+.skill_4{
+       @include position(70%,10%); 
+}
+.skill_5{
+       @include position(80%,10%); 
+}
+.skill_6{
+       @include position(87%,10%); 
+}
+#taiyang{
+    font-size:110px;
+    color:red;
+    @include opacity(80);
+    @include position(10%,60%); 
+}
+#chilun{
+   font-size:110px;
+    color:#2DCDD5;
+    @include opacity(80);
+    @include position(31%,20%);
+}
+.circle{
+    @include position(20%,80%);
+    background: url(../images/circle1.png) no-repeat center;
+    background-size: 100% 100%;
+    width: 70%;
+    height: 60%
+}
+.myexp{
+    @include position(7%,2%);
+    @include flex;
+    width: 47%;
+    height: 4%;
+    background: rgba(5, 4, 14, 0.56);
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-size: 21px;
+}
+.myexp_1,.myexp_2,.myexp_3{
+    @include flex;
+    background: rgba(5, 4, 14, 0.8);
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: row;
+    color: #A4E60A;
+    padding:0.5% 0;
+    width:97%;
+}
+.myexp_1{
+     @include position(20%,2%);
+}
+.myexp_2{
+     @include position(33%,2%);
+}
+.myexp_3{
+     @include position(46%,2%);
+}
+.xmexp{
+    @include position(60%,2%);
+    @include flex;
+    width: 47%;
+    height: 4%;
+    background: rgba(5,4,14,.56);
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    border-radius: 10px;
+    font-size: 21px;
+}
+.music{
+    background: url(../images/normalmusic.svg) center no-repeat;
+    background-size: 70% 70%;
+    width: 16%;
+    height: 10%;
+    z-index: 200;
+    @include opacity(70);
+    @include position(3%,78%);
+}
+.active{
+   background: #E7EC0C !important;
+   color: #283246 !important; 
+}
+.title{
+    color:green;
+}
+.erwm{
+    font-size: 24px;
+    color: white;
+    background: #09192D;
+    width: 10%;
+    height: 5%;
+    @include flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24%;
+     @include opacity(70);
+     @include position(7%,6%);
+}
